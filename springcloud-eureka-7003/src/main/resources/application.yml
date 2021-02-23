@@ -1,0 +1,16 @@
+server:
+  port: 7103
+spring:
+  application:
+    name: eureka-server
+#eureka
+eureka:
+  instance:
+    hostname: eureka7103.com
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      #单机 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+      # 集群
+      defaultZone: http://eureka7102.com:7102,http://eureka7101.com:7101
