@@ -13,4 +13,4 @@ eureka:
     service-url:
       #单机 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
       # 集群
-      defaultZone: http://eureka7102.com:7102,http://eureka7101.com:7101
+      defaultZone: http://eureka7102.com:7102/eureka,http://eureka7101.com:7101/eureka
