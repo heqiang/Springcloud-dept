@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClientName;
+import org.springframework.context.annotation.ComponentScan;
 
 //eureka 和Ribbon 整合以后 客户端
 @SpringBootApplication

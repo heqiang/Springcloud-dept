@@ -16,6 +16,7 @@
         <module>springcloud-provieder-dept-8002</module>
         <module>Springcloud-provieder-dept-8003</module>
         <module>Springcloud-provieder-dept-8004</module>
+        <module>springcloud-consumer-dept-feign</module>
     </modules>
     <!-- 打包方式-->
     <packaging>pom</packaging>
