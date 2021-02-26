@@ -1,0 +1,7 @@
+通过网关访问没有设置网关路由的时候:
+         http://localhost:9527/{微服务应用名}/dept/list
+         http://localhost:9527/springcloud-provider-dept/dept/list
+路由配置后：
+        mydept.serviceId: springcloud-provider-dept
+        mydept.path: /mydept/**
+        http://localhost:9527/mydept/dept/list
