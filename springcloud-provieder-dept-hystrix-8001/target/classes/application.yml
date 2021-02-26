@@ -1,5 +1,5 @@
 server: 
-  port:  800
+  port:  8001
 mybatis:
   mapper-locations:  classpath:mybatis/mapper/*.xml
   config-location:  classpath:mybatis/mybatis-config.xml
@@ -33,7 +33,7 @@ eureka:
   instance:
     hostname: localhost
     instance-id: springcloud-provider-dept-hystrix-8001
-  # 是否展示地址
+  # 是否展示服务器ip地址
     prefer-ip-address: true
   client:
     service-url:

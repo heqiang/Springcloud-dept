@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
-@FeignClient(value = "SPRINGCLOUD-PROVIDER-DEPT")
+@FeignClient(value = "SPRINGCLOUD-PROVIDER-DEPT",fallbackFactory = DeptClientServiceFallBackFactory.class)
 @Component
 public interface DeptClientService {
     @GetMapping("/dept/get/{id}")
-    public Dept queryById(Long id);
+    public Dept queryById(@PathVariable("id") Long id);
 
     @GetMapping("/dept/list")
     public List<Dept> queryAll();

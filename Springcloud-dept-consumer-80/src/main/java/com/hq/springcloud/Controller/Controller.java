@@ -12,9 +12,6 @@ public class Controller {
 
     @Autowired
     RestTemplate restTemplate;
-    //通过ribbon实现的时候不在写死 应该是一个变量
-//    private static final String REST_URL_PREFIX = "HTTP://localhost:8001";
-    //Ribbon 地址应该事一个变量 通过服务名来访问
 
     private static final String REST_URL_PREFIX = "HTTP://SPRINGCLOUD-PROVIDER-DEPT";
 

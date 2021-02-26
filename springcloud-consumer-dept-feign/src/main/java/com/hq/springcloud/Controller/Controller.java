@@ -16,6 +16,7 @@ public class Controller {
 
     @RequestMapping("/comsumer/dept/get/{id}")
     public Dept get(@PathVariable("id")Long  id){
+        System.out.println(id);
         return  this.deptClientService.queryById(id);
     }
 
